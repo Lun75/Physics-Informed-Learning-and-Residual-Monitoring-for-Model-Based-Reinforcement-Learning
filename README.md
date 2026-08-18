@@ -53,10 +53,10 @@ https://gymnasium.farama.org/environments/classic_control/cart_pole/
         ├── train_ode_model.m
         ├── run_lambda_seed_ablation.m
         ├── run_dynamic_scale_shift.m
-        ├── case1_state_dependent_....m
+        ├── case1_state_dependent_shift.m
         ├── case2_gaussian_noise.m
         └── case3_laplace_noise.m
-```markdown
+```
 
 ## Reproducing the Experiments
 
