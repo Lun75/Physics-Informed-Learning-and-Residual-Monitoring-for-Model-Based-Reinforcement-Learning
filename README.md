@@ -57,7 +57,6 @@ https://gymnasium.farama.org/environments/classic_control/cart_pole/
         ├── case2_gaussian_noise.m
         └── case3_laplace_noise.m
 ```text
-```markdown
 
 ## Reproducing the Experiments
 
