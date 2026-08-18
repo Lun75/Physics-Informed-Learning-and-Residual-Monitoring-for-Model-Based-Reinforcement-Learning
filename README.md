@@ -21,17 +21,41 @@ https://gymnasium.farama.org/environments/classic_control/cart_pole/
 
 ## Repository Structure
 
-data/
-    cartpole_transitions.npz
+- `data/` — CartPole and point-mass datasets used in the experiments.
+- `src/cartpole/` — CartPole dataset generation, physics-weight selection,
+  recursive prediction, dynamics misspecification, residual monitoring,
+  and Dyna-DQN evaluation.
+- `src/point_mass/` — Core MATLAB scripts for the controlled point-mass
+  validation experiments.
 
-src/
-├── cartpole_transition_experiment.py
-├── train_cartpole_lambda.py
-├── evaluate_cartpole_lambda_multistep_sensitivity.py
-├── evaluate_cartpole_physical_misspecification_5seeds.py
-├── evaluate_cartpole_multistep_misspecification.py
-├── evaluate_cartpole_final_residual_monitoring.py
-└── train_cartpole_dyna_dqn_5seeds.py
+  physics-informed-mbrl/
+│
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── cartpole_transitions.npz
+│   └── point_mass_dataset.mat
+│
+└── src/
+    ├── cartpole/
+    │   ├── cartpole_transition_experiment.py
+    │   ├── train_cartpole_lambda.py
+    │   ├── evaluate_cartpole_lambda_multistep_sensitivity.py
+    │   ├── evaluate_cartpole_multistep_misspecification.py
+    │   ├── evaluate_cartpole_physical_misspecification.py
+    │   ├── evaluate_cartpole_final_residual_monitoring.py
+    │   └── train_cartpole_dyna_dqn_5seeds.py
+    │
+    └── point_mass/
+        ├── modelLoss.m
+        ├── train_plain_model.m
+        ├── train_ode_model.m
+        ├── run_lambda_seed_ablation.m
+        ├── run_dynamic_scale_shift.m
+        ├── case1_state_dependent_....m
+        ├── case2_gaussian_noise.m
+        └── case3_laplace_noise.m
 
 ## Reproducing the Experiments
 
