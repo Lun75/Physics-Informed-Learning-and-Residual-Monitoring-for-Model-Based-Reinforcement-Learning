@@ -27,7 +27,7 @@ https://gymnasium.farama.org/environments/classic_control/cart_pole/
   and Dyna-DQN evaluation.
 - `src/point_mass/` — Core MATLAB scripts for the controlled point-mass
   validation experiments.
-
+```text
   physics-informed-mbrl/
 │
 ├── README.md
