@@ -25,8 +25,13 @@ data/
     cartpole_transitions.npz
 
 src/
-    cartpole_transition_experiment.py
-    train_cartpole_lambda.py
+├── cartpole_transition_experiment.py
+├── train_cartpole_lambda.py
+├── evaluate_cartpole_lambda_multistep_sensitivity.py
+├── evaluate_cartpole_physical_misspecification_5seeds.py
+├── evaluate_cartpole_multistep_misspecification.py
+├── evaluate_cartpole_final_residual_monitoring.py
+└── train_cartpole_dyna_dqn_5seeds.py
 
 ## Reproducing the Experiments
 
